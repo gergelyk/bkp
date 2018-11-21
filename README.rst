@@ -24,8 +24,8 @@ Usage
     # Following copy will be created: foo/bar/baz.b01
     # Invoking command again will create foo/bar/baz.b02 etc.
 
-    # Alternatively '-a' flag can be use to create tar archive instead of simple
-    # copy. Also '-m' can be used to add comments:
+    # Alternatively '-a' flag can be used to create tar archive instead of
+    # simple copy. Also '-m' can be used to add comments:
 
     bkp -am "initial version" foo/bar/baz
 
@@ -40,6 +40,8 @@ Usage
     # This will create/overwrite original file/directory: foo/bar/baz
 
     # Note that multiple files can be specified in the command line.
+    # Output files are always created in the same directory where corresponding
+    # input files are located, no matter what CWD at the time.
     # For more help invoke:
 
     bkp --help
