@@ -6,7 +6,7 @@ setup(
     description = 'Creates backups of your files and directories.',
     author = 'Grzegorz Krason',
     author_email = 'grzegorz.krason@gmail.com',
-    url = 'https://pypi.org/project/bkp/',
+    url = 'https://github.com/gergelyk/bkp',
     license = 'MIT',
     packages = find_packages(),
     keywords = 'backup'.split(),

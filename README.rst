@@ -14,37 +14,34 @@ Installation
 Usage
 -----
 
+Provided that we have a file or directory: `foo/bar/baz`
+
 .. code-block:: bash
 
-    # Given that we have a file or directory: foo/bar/baz
-    # Create copy by invoking:
-
+    # Create a copy:   
     bkp foo/bar/baz
 
     # Following copy will be created: foo/bar/baz.b01
     # Invoking command again will create foo/bar/baz.b02 etc.
 
-    # Alternatively '-a' flag can be used to create tar archive instead of
-    # simple copy. Also '-m' can be used to add comments:
-
-    bkp -am "initial version" foo/bar/baz
-
-    # Comment and other details can be obtained by invoking:
-
-    bkp -i foo/bar/baz.b03
-
-    # Restore your file or directory by invoking:
-
+    # Restore your file or directory:
     bkp -r foo/bar/baz.01
 
     # This will create/overwrite original file/directory: foo/bar/baz
 
-    # Note that multiple files can be specified in the command line.
-    # Output files are always created in the same directory where corresponding
-    # input files are located, no matter what CWD at the time.
-    # For more help invoke:
+Note that multiple files can be specified in the command line. Output files are always created in the same directory where corresponding input files are located, no matter what CWD at the time.
 
-    bkp --help
+Alternatively ``-a`` flag can be used to create tar archive instead of a simple copy. Also ``-m`` can be used to add comments.
+
+.. code-block:: bash
+
+    # Create an archive
+    bkp -am "initial version" foo/bar/baz
+
+    # Comment and other details can be obtained by invoking:
+    bkp -i foo/bar/baz.b03
+
+For more options and explanations invoke ``bkp --help``.
 
 
 Disclaimer
