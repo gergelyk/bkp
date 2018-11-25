@@ -14,6 +14,9 @@ Installation
 Usage
 -----
 
+Creating Backups & Restoring
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Provided that we have a file or directory: `foo/bar/baz`
 
 .. code-block:: bash
@@ -30,6 +33,9 @@ Provided that we have a file or directory: `foo/bar/baz`
     # This will create/overwrite original file/directory: foo/bar/baz
 
 Note that multiple files can be specified in the command line. Output files are always created in the same directory where corresponding input files are located, no matter what CWD at the time.
+
+Working With Archives
+^^^^^^^^^^^^^^^^^^^^^
 
 Alternatively ``-a`` flag can be used to create tar archive instead of a simple copy. Also ``-m`` can be used to add comments.
 
