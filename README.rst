@@ -4,7 +4,7 @@ bkp
 Simple utility that makes backups of your files/directories.
 
 .. image:: https://user-images.githubusercontent.com/11185582/48983793-ab82df00-f0f3-11e8-8727-c665b92bdb31.gif
-   :scale: 100
+   :scale: 100
 
 Installation
 ------------
