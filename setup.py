@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 from pathlib import Path
+from bkp.VERSION import VERSION
 
 readme_path = Path(__file__).parent / 'README.rst'
 
@@ -8,7 +9,7 @@ with open(readme_path) as fh:
 
 setup(
     name = 'bkp',
-    version = '0.1.4',
+    version = VERSION,
     description = 'Creates backups of your files and directories.',
     author = 'Grzegorz Krason',
     author_email = 'grzegorz.krason@gmail.com',
