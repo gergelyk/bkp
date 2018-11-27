@@ -8,7 +8,7 @@ with open(readme_path) as fh:
 
 setup(
     name = 'bkp',
-    version = '0.1.1',
+    version = '0.1.4',
     description = 'Creates backups of your files and directories.',
     author = 'Grzegorz Krason',
     author_email = 'grzegorz.krason@gmail.com',
