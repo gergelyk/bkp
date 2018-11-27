@@ -18,11 +18,20 @@ setup(
     keywords = 'backup'.split(),
     long_description=long_description,
     long_description_content_type='text/x-rst',
+    python_requires='~=3.6',
     entry_points = {
         'console_scripts': ['bkp = bkp:main'],
         },
-    classifiers = [],
     install_requires = [
         'click',
+    ],
+    classifiers = [
+        'Programming Language :: Python',
+        'Topic :: Desktop Environment',
+        'Topic :: Office/Business',
+        'Topic :: System',
+        'Topic :: Utilities',
+        'Operating System :: POSIX',
+        'Operating System :: Unix',
     ],
 )
