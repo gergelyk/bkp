@@ -5,6 +5,7 @@ Simple utility that makes backups of your files/directories.
 
 .. image:: https://user-images.githubusercontent.com/11185582/48983793-ab82df00-f0f3-11e8-8727-c665b92bdb31.gif
 
+
 Installation
 ------------
 
@@ -50,6 +51,47 @@ Alternatively ``-a`` flag can be used to create tar archive instead of a simple 
     bkp -i foo/bar/baz.b03
 
 For more options and explanations invoke ``bkp --help``.
+
+
+Development
+-----------
+
+Preparing Environment
+^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+    python3 -m venv venv
+    source venv/bin/activate
+    python3 -m pip install -r requirements.txt
+    python3 -m pip install -r requirements-dev.txt
+    python3 -m pip install -e .
+
+Modifying Dependencies
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+    # edit setup.py
+    # edit requirements*.in
+    pip-compile
+    pip-sync
+    # git add... commit... push...
+
+Testing
+^^^^^^^
+
+    pytest
+
+Releasing
+^^^^^^^^^
+
+.. code-block:: bash
+
+    echo $VERSION > bkp/VERSION
+    twine upload dist/bkp-$VERSION.tar.gz
+    git tag $VERSION
+    git push --tags
 
 
 Disclaimer
