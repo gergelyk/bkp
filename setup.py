@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 from pathlib import Path
-from bkp.VERSION import VERSION
 
+APP_VERSION = open(Path(__file__).parent / 'bkp' / 'VERSION').read().strip()
 readme_path = Path(__file__).parent / 'README.rst'
 
 with open(readme_path) as fh:
@@ -9,7 +9,7 @@ with open(readme_path) as fh:
 
 setup(
     name = 'bkp',
-    version = VERSION,
+    version = APP_VERSION,
     description = 'Creates backups of your files and directories.',
     author = 'Grzegorz Krason',
     author_email = 'grzegorz.krason@gmail.com',
@@ -17,9 +17,10 @@ setup(
     license = 'MIT',
     packages = find_packages(),
     keywords = 'backup'.split(),
-    long_description=long_description,
-    long_description_content_type='text/x-rst',
-    python_requires='~=3.6',
+    long_description = long_description,
+    long_description_content_type = 'text/x-rst',
+    python_requires = '~=3.6',
+    package_data = {'bkp': ['VERSION']},
     entry_points = {
         'console_scripts': ['bkp = bkp:main'],
         },

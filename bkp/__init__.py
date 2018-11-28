@@ -9,7 +9,7 @@ from bkp.action_restore import restore
 from bkp.action_info import info
 from bkp.exceptions import ExpectedError, InvalidInput
 from bkp.terminal import echo_err, echo_inf
-from bkp.VERSION import VERSION
+from bkp.resources import APP_VERSION
 
 def check_invalid_options(command, params, kwargs):
     cmd_name = command.__name__
@@ -34,7 +34,7 @@ def ensure_at_least_one_item(ctx, param, value):
 def print_version(ctx, param, value):
     if not value or ctx.resilient_parsing:
         return
-    click.echo(VERSION)
+    click.echo(APP_VERSION)
     ctx.exit()
 
 def app(**kwargs):
