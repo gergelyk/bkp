@@ -81,6 +81,8 @@ Modifying Dependencies
 Testing
 ^^^^^^^
 
+.. code-block:: bash
+
     pytest
 
 Releasing
