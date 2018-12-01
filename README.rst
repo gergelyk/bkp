@@ -14,6 +14,13 @@ Installation
     sudo pip install bkp
 
 
+Compatibility
+-------------
+
+* This software is expected to work with Python 3.6, 3.7 and compatible.
+* It has never been tested under operating systems other than Linux.
+* For editing messages interactively (``-M`` switch) you need either have `vi` installed, or set ``EDITOR`` system variable to relevant value.
+
 Usage
 -----
 
