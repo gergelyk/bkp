@@ -1,8 +1,8 @@
 # bkp
-![Github - Tests](https://github.com/gergelyk/bkp/actions/workflows/tests.yml/badge.svg)
-![PyPI - Version](https://img.shields.io/pypi/v/bkp)
-![PyPI - License](https://img.shields.io/pypi/l/bkp)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/bkp)
+[![Github - Tests](https://github.com/gergelyk/bkp/actions/workflows/tests.yml/badge.svg)](https://github.com/gergelyk/bkp/actions)
+[![PyPI - Version](https://img.shields.io/pypi/v/bkp)](https://pypi.org/project/bkp/)
+[![PyPI - License](https://img.shields.io/pypi/l/bkp)](https://opensource.org/license/mit)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/bkp)](https://pypistats.org/packages/bkp)
 
 
 Simple utility that makes backups of your files/directories.
