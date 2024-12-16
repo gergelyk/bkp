@@ -1,7 +1,9 @@
 # bkp
+![Github - Tests](https://github.com/gergelyk/bkp/actions/workflows/tests.yml/badge.svg)
 ![PyPI - Version](https://img.shields.io/pypi/v/bkp)
 ![PyPI - License](https://img.shields.io/pypi/l/bkp)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/bkp)
+
 
 Simple utility that makes backups of your files/directories.
 
