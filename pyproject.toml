@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bkp"
-version = "0.2.1"
+version = "1.0.0"
 description = "Creates backups of your files and directories."
 authors = ["Grzegorz Krason <grzegorz.krason@gmail.com>"]
 homepage = "https://github.com/gergelyk/bkp"
