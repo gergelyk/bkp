@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "bkp"
+version = "0.2.0"
+description = "Creates backups of your files and directories."
+authors = ["Grzegorz Krason <grzegorz.krason@gmail.com>"]
+homepage = "https://github.com/gergelyk/bkp"
+repository = "https://github.com/gergelyk/bkp"
+license = "MIT"
+readme = "README.md"
+keywords = ["backup"]
+classifiers = [
+    "Programming Language :: Python",
+    "Topic :: Desktop Environment",
+    "Topic :: Office/Business",
+    "Topic :: System",
+    "Topic :: Utilities",
+    "Operating System :: POSIX",
+    "Operating System :: Unix"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.1.7"
+
+
+[tool.poetry.group.dev.dependencies]
+plumbum = "^1.9.0"
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
