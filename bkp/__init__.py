@@ -13,7 +13,7 @@ from bkp.resources import APP_VERSION
 
 def check_invalid_options(command, params, kwargs):
     cmd_name = command.__name__
-    cmd_args = inspect.getargspec(command).args
+    cmd_args = inspect.getfullargspec(command).args
 
     all_options = filter(lambda p: isinstance(p, click.core.Option), params)
     provided_options = list(p.name for p in all_options if p.default != kwargs.get(p.name, p.default))
