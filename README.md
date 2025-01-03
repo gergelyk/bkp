@@ -62,44 +62,6 @@ bkp -i foo/bar/baz.b03
 
 For more options and explanations invoke `bkp --help`.
 
-
-## Development
-
-Preparing environment:
-
-```sh
-python3 -m venv venv
-source venv/bin/activate
-python3 -m pip install -r requirements.txt
-python3 -m pip install -r requirements-dev.txt
-python3 -m pip install -e .
-```
-
-Modifying dependencies:
-
-```sh
-# edit setup.py
-# edit requirements*.in
-pip-compile
-pip-sync
-# git add... commit... push...
-```
-
-Testing:
-
-```sh
-pytest
-```
-
-Releasing:
-
-```sh
-echo $VERSION > bkp/VERSION
-twine upload dist/bkp-$VERSION.tar.gz
-git tag $VERSION
-git push --tags
-```
-
 ## Disclaimer
 
 Author doesn't take any responsibility for loss or damage caused by this utility. You are using it on your own risk.
