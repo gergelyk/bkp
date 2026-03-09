@@ -17,15 +17,15 @@ Simple utility that makes backups of your files/directories.
 
 ## Installation
 
-```python
+```sh
 pip install bkp
 ```
 
 ## Compatibility
 
-* This software is expected to work with Python 3.6, 3.7 and compatible.
+* This software is expected to work with Python 3.6 and compatible.
 * It has never been tested under operating systems other than Linux.
-* For editing messages interactively (``-M`` switch) you need either have `vi` installed, or set ``EDITOR`` system variable to relevant value.
+* For editing messages interactively (``-M`` switch) you either need to have `vi` installed, or set ``EDITOR`` system variable to relevant value.
 
 ## Usage
 
@@ -41,7 +41,7 @@ bkp foo/bar/baz
 # Invoking command again will create foo/bar/baz.b02 etc.
 
 # Restore your file or directory:
-bkp -r foo/bar/baz.01
+bkp -r foo/bar/baz.b01
 
 # This will create/overwrite original file/directory: foo/bar/baz
 ```
@@ -64,4 +64,4 @@ For more options and explanations invoke `bkp --help`.
 
 ## Disclaimer
 
-Author doesn't take any responsibility for loss or damage caused by this utility. You are using it on your own risk.
+Author doesn't take any responsibility for loss or damage caused by this utility. You are using it at your own risk.
